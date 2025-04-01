@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toolbox with Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .hamburger {
+            cursor: pointer;
+            width: 30px;
+            height: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .hamburger div {
+            height: 5px;
+            background-color: #f7f8f8;
+        }
+        .content {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .content li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body background="backup.jpeg"></body>
+<body>
+    <div class="hamburger" onclick="toggleContent()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="hiddenContent" class="content">
+        <h3 style="color: aliceblue;"></h3>
+        <ul><li>
+    
+      <li>
+          <button onclick="showServices()">Show Services</button>
+      </li>
+  </ul>
+
+            <li> <a href="Services.html">Services </a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="Contacts.html"> Contact Us</a></li>
+        </ul>
+        <div id="servicesContent" style="display: none;">
+            <h4 style="color: aliceblue;">Services Offered</h4>
+            <ul style="color: aliceblue;">
+                <li>Consulting</li>
+                <li>Data Recovery</li>
+                <li>Refurbishing</li>
+                <li>Data Backup</li>
+            </ul>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("hiddenContent");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+
+        function showServices() {
+            document.getElementById("servicesContent").style.display = "block";
+            document.getElementById("softwareContent").style.display = "none";
+        }
+
+        function showSolutions() {
+            document.getElementById("softwareContent").style.display = "block";
+            document.getElementById("servicesContent").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+    </div>
+    <div style="color: rgb(248, 249, 252); font-family:Tahoma;" class="banner", > 
+  NEW SOFTWARE ALERT!!!
+  <a href="Software.html"> Click to subscribe</a>
+</div>
+
+<h3><div> <banner-content style="color: rgb(246, 248, 250); font-family:Tahoma;">
+  <h1>Introducing IWB's New Data Recovery & Destruction Tools>
+ <p="display: inline-block; color: rgb(245, 237, 237);>Secure and Efficient Solutions for your Data Management Needs</p></h1></banner-content>
+</div></h3>
+ <div style="color: rgb(248, 248, 248); font-family:Tahoma;"class="container">
+  <h2> Our Stakeholders</h2></div>
+  
+  <div style="color: rgb(248, 248, 248); font-family:Tahoma;"class="Stakeholders">
+    <h3>CEO:KENNETH </h3>
+            <p><a href="https://www.pe.ibw.co.ls" target="_blank"> Visit Website</a></p> </div>
+
+<div style="color: rgb(247, 248, 250); font-family:Tahoma;" class="Stakeholders"> 
+  <h3> Tech Refurbishers</h3>
+           <p><a href="techrefurbishers.ibw.co.ls" target="_blank">Visit website </a></p>
+</div>
+</body>
+</html>
